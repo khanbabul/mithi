@@ -1,0 +1,858 @@
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #006666;
+    color: white;
+    padding: 30px;
+  }
+
+  .header-img img {
+    max-width: 200px;
+    border-radius: 5px;
+  }
+
+
+  section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  footer {
+    background: #004c4c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  #mithi {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  nav {
+    position: relative;
+    background: #004c4c;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .nav {
+    width: 100%;
+    background-color: #004c4c;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .nav ul li a:hover{
+    transition: 0.3s;
+    opacity: 0.7;
+    font-size: 19px;
+  }
+
+  #1m {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    margin-top: 60px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  #12 {
+    background-color: #1b4688;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+  }
+
+  /* Top Header same as your theme */
+  .header {
+    background: #056d6d;
+    color: white;
+    padding: 40px 60px;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 45px;
+  }
+
+  .header p {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  /* ABOUT SECTION */
+
+  .about-box {
+    width: 85%;
+    margin: 40px auto;
+    background: rgb(165, 216, 14);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+  }
+
+  .about-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: #056d6d;
+    margin-bottom: 10px;
+  }
+
+  .line {
+    width: 100px;
+    height: 4px;
+    background: #056d6d;
+    margin: 5px auto 25px auto;
+    border-radius: 10px;
+  }
+
+  .about-section {
+    padding: 70px 10%;
+    background: #f2f6f9;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 34px;
+    color: #0b7285;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    color: #666;
+    margin: 10px 0 40px;
+  }
+
+  .about-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px;
+    display: flex;
+    gap: 35px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+  }
+
+  .about-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .about-image {
+    overflow: hidden;
+    border-radius: 14px;
+  }
+
+  .about-image img {
+    width: 320px;
+    transition: 0.4s;
+  }
+
+  .about-image img:hover {
+    transform: scale(1.08);
+  }
+
+  .badges {
+    margin-bottom: 12px;
+  }
+
+  .badges span {
+    background: #e6f7fb;
+    color: #0b7285;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 13px;
+  }
+
+  .about-content h3 {
+    color: #0b7285;
+    margin-bottom: 12px;
+  }
+
+  .about-points {
+    list-style: none;
+    margin-top: 15px;
+  }
+
+  .about-points li {
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  @media(max-width:768px) {
+    .about-box {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-image {
+      width: 320px;
+      height: 240px;
+    }
+  }
+
+  .mithi-modern {
+    background: #f4f9f9;
+    padding: 80px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 36px;
+    color: #0b5f5a;
+    margin-bottom: 15px;
+  }
+
+  .section-intro {
+    font-size: 17px;
+    color: #444;
+    max-width: 750px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+  }
+
+  .mithi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+  }
+
+  .mithi-card {
+    background: #0eb8b8;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+
+  .mithi-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .mithi-card h3 {
+    color: #0b5f5a;
+    margin-bottom: 10px;
+  }
+
+  .mithi-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .mithi-btn {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 14px 35px;
+    background: #0b5f5a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+
+  .mithi-btn:hover {
+    background: #094c48;
+  }
+
+  /* Animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+  }
+
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  body {
+    background-color: #0b7285;
+  }
+
+  .mithi-modern {
+    background: linear-gradient(135deg, #f4f9f9, #e0f0f0) !important;
+    color: #0b5f5a !important;
+    padding: 80px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .logo1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+  }
+
+  #home {
+    background-color: #3c9f9f;
+  }
+
+  header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #0570eb;
+    color: white;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  .places-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .place-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+
+  .place-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .place-card-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .place-card-content h2 {
+    margin: 10px 0;
+    color: #4a90e2;
+  }
+
+  .place-card-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .place-card-content button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+  }
+
+  .place-card-content button:hover {
+    background: #357ABD;
+  }
+
+  @media(max-width: 960px) {
+    .places-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+
+
+
+
+  .culture-section {
+    background: url('culture.jpg');
+    background-size: cover;
+    background-position: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .culture-overlay {
+    width: 90%;
+    margin: auto;
+    background: linear-gradient(to bottom, #000000d0, #000000b0);
+    padding: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #ffffff30;
+  }
+
+  .culture-overlay .title {
+    font-size: 45px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #ffd27f;
+  }
+
+  .culture-overlay .intro {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    opacity: .9;
+  }
+
+  .culture-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 300px;
+    background: #ffffff1a;
+    padding: 15px;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    transition: 0.4s;
+    border: 1px solid #ffffff3a;
+    box-shadow: 0 0 15px #00000070;
+  }
+
+  .box img {
+    width: 100%;
+    border-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .box h2 {
+    margin: 10px 0;
+    color: #ffd27f;
+    font-size: 22px;
+  }
+
+  .box p {
+    font-size: 15px;
+  }
+
+  .box:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: #ffffff30;
+  }
+
+  /* Responsive */
+  @media(max-width:800px) {
+    .intro {
+      width: 95%;
+    }
+  }
+
+  #logo {
+    font-size: larger;
+    color: burlywood;
+
+  }
+
+  #logo1 {
+    font-size: larger;
+
+  }
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title id="1m">Mithi – District Tharparkar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-text">
+      <h1><b>Mithi City</h1>
+      <p>District Tharparkar – Sindh, Pakistan</b></p>
+    </div>
+    <div class="header-img">
+      <img src="LOGOMITHI.png" alt="Mithi Image" width="200px" height="200px">
+    </div>
+  </header>
+
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#index">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#cultures">Culture</a></li>
+      <li><a href="#places">Places</a></li>
+    </ul>
+
+  </nav>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="mithi8.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+
+      <div class="carousel-item">
+        <img src="Gadhi4.jpg" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+
+      <div class="carousel-item">
+        <img src="Gadhi1.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+
+      <div class="carousel-item">
+        <img src="Gadhi5.jpg" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+
+
+  <section id="about-preview">
+    <h2>Why Mithi is Special</h2>
+    <p><b>Mithi is known for its peaceful lifestyle, religious harmony, and rich Sindhi culture. It is a desert city
+        with amazing natural beauty and colorful traditions.</b></p>
+  </section>
+
+
+  <br>
+
+  <body>
+    <div class="header" id="about">
+      <h1 id="about-box.html">Mithi City</h1>
+      <p><b>District Tharparkar – Sindh, Pakistan </b></p>
+    </div>
+    <section class="about-section">
+
+      <h2 class="section-title">About Mithi</h2>
+      <p class="section-subtitle">
+        <b> Heart of Tharparkar – Culture, Peace & Tradition</b>
+      </p>
+
+      <div class="about-box">
+
+        <div class="about-image">
+          <img src="mithigate (2).jpg" Mithi City>
+        </div>
+
+        <div class="about-content">
+
+          <div class="badges">
+            <span>🌵 Thar Desert</span>
+            <span>🎶 Folk Culture</span>
+            <span>🤍 Peace City</span>
+          </div>
+
+          <h3>About Mithi City</h3>
+          <p class="logo1"><b>
+              Mithi is a beautiful town in Tharparkar, known for its peaceful environment,
+              rich culture, and loving people.
+
+          </p>
+          <p class="logo1"><b>
+              Mithi is the administrative center of Tharparkar
+              and stands out as one of the most
+              well-planned towns in the desert region. <br>Daily
+              life in Mithi reflects simplicity, resilience,
+              and close social bonds shaped by desert living.
+
+          </p>
+
+          <p class="logo1">
+            The city is known for religious harmony, rich traditions, handicrafts,
+            folk music, and colorful festivals that reflect unity and cultural pride.
+          </p>
+
+
+          <ul class="about-points">
+            <li class="logo1"><b>✔ Religious Harmony</li>
+            <li class="logo1">✔ Traditional Food & Handicrafts</li>
+            <li class="logo1">✔ Colorful Festivals</li>
+            <li class="logo1">✔ Warm Hospitality</li></b>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+    <!-- Modern About Mithi Section -->
+    <section class="mithi-modern">
+      <div class="container">
+
+        <h2 class="section-title" id="cultures">Mithi – The Living Soul of Thar</h2>
+        <p class="section-intro">
+          Mithi is not just a city of the Thar Desert — it is a living example of harmony,
+          resilience, and cultural balance. A place where tradition breathes in everyday life
+          and progress walks gently beside heritage.
+        </p>
+
+        <div class="mithi-grid">
+
+          <div class="mithi-card fade-in">
+            <h3> City Built on Harmony</h3>
+            <p><b>
+                Mithi is globally admired for its religious and social harmony.
+                Mosques, temples, and churches stand side by side,
+                reflecting generations of peaceful coexistence.</b>
+            </p>
+          </div>
+
+          <div class="mithi-card fade-in">
+            <h3> Sustainable Desert Living</h3>
+            <p><b>
+                Life in Mithi is guided by desert wisdom — smart water use,
+                climate-friendly homes, and strong community networks
+                make it a model of sustainable living.</b>
+            </p>
+          </div>
+
+          <div class="mithi-card fade-in">
+            <h3> Culture That Lives</h3>
+            <p><b>
+                Culture in Mithi is not displayed — it is lived.
+                From folk music to handcrafted textiles,
+                creativity flows naturally through daily life.</b>
+            </p>
+          </div>
+
+          <div class="mithi-card fade-in">
+            <h3> Mithi in 2026</h3>
+            <p><b>
+                Today, Mithi is moving forward with education,
+                digital awareness, and youth empowerment —
+                while proudly protecting its cultural roots.</b>
+            </p>
+          </div>
+
+        </div>
+        <br><br>
+        <button onclick="showCulture()">Explore The Culture of Thar →</button></a>
+        <section id="culture" style="display:none;">
+          <section class="culture-section">
+            <div class="culture-overlay">
+              <h1>Mithi Tharparkar Culture</h1>
+              <p id="logo">
+
+                Mithi Tharparkar, a region in Sindh, is famous for its Sufi mindset,
+                love, peace, and hospitality. The people here have<br> preserved centuries-old
+                traditions to this day,where life is based on simplicity, morality, and respect.
+              </p>
+
+              <div class="culture-box">
+                <div class="box">
+                  <img src="Life style.jpg">
+                  <h2>Traditional Lifestyle</h2>
+                  <p id="logo1">
+                    The desert, camels, and natural scenery make the beauty here even more memorable.
+                  </p>
+                </div>
+
+                <div class="box">
+                  <img src="Thar Desert.jpg">
+                  <h2>Desert Beauty</h2>
+                  <p id="logo1">
+                    The sandy desert, camels, and natural scenery make the beauty here even more memorable.
+                  </p>
+                </div>
+
+                <div class="box">
+                  <img src="music festival .jpg">
+                  <h2>Music & Festivals</h2>
+                  <p id="logo1">
+                    Dhol, Sufi poetry, local dances, and fairs are an important part of Tharparkar’s culture, bringing
+                    joy to the people.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+
+
+      </div>
+    </section>
+
+    <body id="home">
+      <header id="places">
+        <h1>Famous Places & Stays</h1>
+      </header>
+
+      <div class="places-container">
+        <!-- Place 1 -->
+        <div class="place-card">
+          <img src="gadhi7.jpg" alt="Gadhi Bhit">
+          <div class="place-card-content">
+            <h2>Gadhi Bhit</h2>
+            <p><b>A beautiful place known for its scenic views and historical significance.</p>
+            <button>Explore</button></b>
+          </div>
+        </div>
+
+        <!-- Place 2 -->
+        <div class="place-card">
+          <img src="newgadhibhit1.jpg" alt="New Gadhi Bhit">
+          <div class="place-card-content">
+            <h2>New Gadhi Bhit</h2>
+            <p><b>A modern area with attractions for families and tourists alike.</b></p>
+            <button>Explore</button></b>
+          </div>
+        </div>
+
+        <!-- Place 3 -->
+        <div class="place-card">
+          <img src="family park mithi.jpg" alt="Family Park">
+          <div class="place-card-content">
+            <h2>Family Park</h2><b>
+              <p>The perfect spot to relax, enjoy nature, and have fun with loved ones.</p>
+              <button>Explore</button>
+            </b>
+          </div>
+        </div>
+        <br><br>
+        <!-- Restaurant -->
+        <div class="place-card">
+          <img src="tharcusion1.jpg" alt="Sunrise Restaurant">
+          <div class="place-card-content">
+            <h2>Tharcusion Restaurant</h2><b>
+              <p>Delicious food with a cozy atmosphere, perfect for family dinners.</p>
+              <button>Book Now</button>
+            </b>
+          </div>
+        </div>
+
+        <!-- Guest House -->
+        <div class="place-card">
+          <img src="ashyana guest house.jpg" alt="Desert Guest House">
+          <div class="place-card-content">
+            <h2>Ashyana Guest House</h2><b>
+              <p>Comfortable stay with warm hospitality in a serene environment.</p>
+
+              <button>Book Now</button>
+            </b>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <footer>
+        <p id="fonts"><b>PITP Phase-II Batch-II Project <br> HTML, CSS , JS & bootstrap <br> Designed By <a
+              href="#">Lutfullah</a> and <a href="#">Ayaz ALi</a></p>
+      </footer>
+
+    </body>
+
+</html>
+
+<script>
+  const cards = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+
+
+
+  function showCulture() {
+    document.getElementById("culture").style.display = "block";
+    document.getElementById("culture").scrollIntoView({ behavior: "smooth" });
+  }
+
+
+</script>

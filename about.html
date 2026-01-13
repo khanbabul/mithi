@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About – Mithi City</title>
+
+<style>
+#12{
+    background-color:#1b4688;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+/* Top Header same as your theme */
+.header{
+    background:#056d6d;
+    color:white;
+    padding:40px 60px;
+}
+
+.header h1{
+    margin:0;
+    font-size:45px;
+}
+
+.header p{
+    font-size:18px;
+    margin-top:8px;
+}
+
+/* ABOUT SECTION */
+
+.about-box{
+    width:85%;
+    margin:40px auto;
+    background:rgb(165, 216, 14);
+    border-radius:10px;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.about-title{
+    text-align:center;
+    font-size:35px;
+    font-weight:700;
+    color:#056d6d;
+    margin-bottom:10px;
+}
+
+.line{
+    width:100px;
+    height:4px;
+    background:#056d6d;
+    margin:5px auto 25px auto;
+    border-radius:10px;
+}
+.about-section{
+    padding: 70px 10%;
+    background: #f2f6f9;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 34px;
+    color: #0b7285;
+}
+
+.section-subtitle{
+    text-align: center;
+    color: #666;
+    margin: 10px 0 40px;
+}
+
+.about-box{
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px;
+    display: flex;
+    gap: 35px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.about-box:hover{
+    transform: translateY(-5px);
+}
+
+.about-image{
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.about-image img{
+    width: 320px;
+    transition: 0.4s;
+}
+
+.about-image img:hover{
+    transform: scale(1.08);
+}
+
+.badges{
+    margin-bottom: 12px;
+}
+
+.badges span{
+    background: #e6f7fb;
+    color: #0b7285;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+.about-content h3{
+    color: #0b7285;
+    margin-bottom: 12px;
+}
+
+.about-points{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.about-points li{
+    margin-bottom: 8px;
+    color: #333;
+}
+
+@media(max-width:768px){
+    .about-box{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .about-image{
+        width: 320px;
+        height:240px;
+    }
+}
+.mithi-modern {
+  background: #f4f9f9;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #0b5f5a;
+  margin-bottom: 15px;
+}
+
+.section-intro {
+  font-size: 17px;
+  color: #444;
+  max-width: 750px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+}
+
+.mithi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.mithi-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.mithi-card:hover {
+  transform: translateY(-8px);
+}
+
+.mithi-card h3 {
+  color: #0b5f5a;
+  margin-bottom: 10px;
+}
+
+.mithi-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.mithi-btn {
+  display: inline-block;
+  margin-top: 45px;
+  padding: 14px 35px;
+  background: #0b5f5a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.mithi-btn:hover {
+  background: #094c48;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+body{
+    background-color: #0b7285;
+}
+.mithi-modern {
+  background: linear-gradient(135deg, #f4f9f9, #e0f0f0) !important;
+  color: #0b5f5a !important;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.logo1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+
+
+</style>
+</head>
+
+
+<body id="12">
+<div class="header">
+    <h1>Mithi City</h1>
+    <p><b>District Tharparkar – Sindh, Pakistan </b></p>
+</div>
+<section class="about-section">
+
+    <h2 class="section-title">About Mithi</h2>
+    <p class="section-subtitle">
+       <b> Heart of Tharparkar – Culture, Peace & Tradition</b>
+    </p>
+
+    <div class="about-box">
+
+        <div class="about-image">
+            <img src="gatemithi.jpg"Mithi City>
+        </div>
+
+        <div class="about-content">
+
+            <div class="badges">
+                <span>🌵 Thar Desert</span>
+                <span>🎶 Folk Culture</span>
+                <span>🤍 Peace City</span>
+            </div>
+
+            <h3>About Mithi City</h3>
+            <p class="logo1"><b>
+            Mithi is a beautiful town in Tharparkar, known for its peaceful environment, 
+            rich culture, and loving people.
+
+            </p>
+            <p class="logo1"><b>
+            Mithi is the administrative center of Tharparkar
+            and stands out as one of the most
+            well-planned towns in the desert region. <br>Daily
+             life in Mithi reflects simplicity, resilience,
+            and close social bonds shaped by desert living.
+
+            </p>
+            
+            <p class="logo1">
+                The city is known for religious harmony, rich traditions, handicrafts,
+                folk music, and colorful festivals that reflect unity and cultural pride.
+            </p>
+            
+
+            <ul class="about-points">
+                <li class="logo1"><b>✔ Religious Harmony</li>
+                <li class="logo1">✔ Traditional Food & Handicrafts</li>
+                <li class="logo1">✔ Colorful Festivals</li>
+                <li class="logo1">✔ Warm Hospitality</li></b>
+            </ul>
+
+        </div>
+    </div>
+</section> 
+    <!-- Modern About Mithi Section -->
+<section class="mithi-modern">
+  <div class="container">
+    
+    <h2 class="section-title">Mithi – The Living Soul of Thar</h2>
+    <p class="section-intro">
+      Mithi is not just a city of the Thar Desert — it is a living example of harmony,
+      resilience, and cultural balance. A place where tradition breathes in everyday life
+      and progress walks gently beside heritage.
+    </p>
+
+    <div class="mithi-grid">
+
+      <div class="mithi-card fade-in">
+        <h3>🌿 City Built on Harmony</h3>
+        <p><b>
+          Mithi is globally admired for its religious and social harmony.
+          Mosques, temples, and churches stand side by side,
+          reflecting generations of peaceful coexistence.</b>
+        </p>
+      </div>
+
+      <div class="mithi-card fade-in">
+        <h3>🏜 Sustainable Desert Living</h3>
+        <p><b>
+          Life in Mithi is guided by desert wisdom — smart water use,
+          climate-friendly homes, and strong community networks
+          make it a model of sustainable living.</b>
+        </p>
+      </div>
+
+      <div class="mithi-card fade-in">
+        <h3>🎨 Culture That Lives</h3>
+        <p><b>
+          Culture in Mithi is not displayed — it is lived.
+          From folk music to handcrafted textiles,
+          creativity flows naturally through daily life.</b>
+        </p>
+      </div>
+
+      <div class="mithi-card fade-in">
+        <h3>🚀 Mithi in 2026</h3>
+        <p><b>
+          Today, Mithi is moving forward with education,
+          digital awareness, and youth empowerment —
+          while proudly protecting its cultural roots.</b>
+        </p>
+      </div>
+
+    </div>
+
+    <a href="culture.html" class="mithi-btn">Explore the Heart of Thar →</a>
+
+  </div>
+</section>
+</body>
+<script>
+    const cards = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+cards.forEach(card => {
+  observer.observe(card);
+});
+
+</script>
+
+

@@ -1,0 +1,128 @@
+<style>
+.culture-section{
+  background: url('culture.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 90px 0;
+}
+
+.culture-overlay{
+  width: 90%;
+  margin: auto;
+  background: linear-gradient(to bottom, #000000d0, #000000b0);
+  padding: 50px;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #ffffff30;
+}
+
+.culture-overlay .title{
+  font-size: 45px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #ffd27f;
+}
+
+.culture-overlay .intro{
+  width: 70%;
+  margin: auto;
+  font-size: 18px;
+  opacity: .9;
+}
+
+.culture-box{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 300px;
+  background: #ffffff1a;
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+  transition: 0.4s;
+  border: 1px solid #ffffff3a;
+  box-shadow: 0 0 15px #00000070;
+}
+
+.box img{
+  width: 100%;
+  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.box h2{
+  margin: 10px 0;
+  color: #ffd27f;
+  font-size: 22px;
+}
+
+.box p{
+  font-size: 15px;
+}
+
+.box:hover{
+  transform: translateY(-10px) scale(1.02);
+  background: #ffffff30;
+}
+
+/* Responsive */
+@media(max-width:800px){
+  .intro{
+    width: 95%;
+  }
+}
+#logo{
+    font-size: larger;
+    color: burlywood;
+    
+}
+#logo1{
+    font-size:larger;
+
+}
+</style>
+<section class="culture-section">
+  <div class="culture-overlay">
+    <h1>Mithi Tharparkar Culture</h1>
+    <p id="logo">
+
+Mithi Tharparkar, a region in Sindh, is famous for its Sufi mindset,
+love, peace, and hospitality. The people here have<br> preserved centuries-old 
+traditions to this day,where life is based on simplicity, morality, and respect.
+    </p>
+
+    <div class="culture-box">
+      <div class="box">
+        <img src="Life style.jpg">
+        <h2>Traditional Lifestyle</h2>
+        <p id="logo1">
+The desert, camels, and natural scenery make the beauty here even more memorable.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="Thar Desert.jpg">
+        <h2>Desert Beauty</h2>
+        <p id="logo1">
+The sandy desert, camels, and natural scenery make the beauty here even more memorable.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="music festival .jpg">
+        <h2>Music & Festivals</h2>
+        <p id="logo1">
+Dhol, Sufi poetry, local dances, and fairs are an important part of Tharparkar’s culture, bringing joy to the people.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
